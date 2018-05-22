@@ -12,6 +12,7 @@ public class Main {
         getUserInput();
         buildArray();
         performSort();
+        printSortedArray();
     }
 
     private static void getUserInput()
@@ -67,7 +68,11 @@ public class Main {
                 }
             }
         }
+    }
 
+    private static void printSortedArray()
+    {
+        System.out.println();
         for(int i : numArray)
         {
             System.out.print(i + " ");
