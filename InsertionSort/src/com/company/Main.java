@@ -21,7 +21,7 @@ public class Main {
         Scanner next = new Scanner(System.in);
         System.out.print("Enter list of numbers to be sorted: ");
         numbers  = next.nextLine();
-        System.out.println(numbers);
+      //  System.out.println(numbers);
     }
 
     private static void buildArray()
@@ -49,13 +49,36 @@ public class Main {
             }
         }
 
-        for(int i : numArray){
+      /*  for(int i : numArray){
             System.out.println(i);
-        }
+        }*/
     }
 
     private static void performSort()
     {
+        for(int i = 0; i < numArray.length; i++)
+        {
+            if(i > 0)
+            {
+                int currIndex = i;
+                while (numArray[currIndex] <= numArray[currIndex - 1] && currIndex > 0)
+                {
+                    int tempG = numArray[currIndex - 1];
+                    numArray[currIndex - 1] = numArray[currIndex];
+                    numArray[currIndex] = tempG;
+                    currIndex--;
+                    if(currIndex == 0)
+                    {
+                        break;
+                    }
+                }
+            }
+        }
+
+        for(int i : numArray)
+        {
+            System.out.print(i + " ");
+        }
 
     }
 
