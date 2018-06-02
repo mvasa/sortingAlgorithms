@@ -30,7 +30,7 @@ public class QuickSort {
 		 //choose pivot and sort to either side of pivot...start with length/2
 		 //recursive
 		
-		 int [] lowerHalf = new int [numArray.length/2];
+		 int ArrayList <> lowerHalf = new ArrayList<int>;
 		 int [] upperHalf = new int [numArray.length/2];
 		 int j = 0;
 		 int p = 0;
